@@ -9,16 +9,15 @@ const Counter2 = (props) => {
 	while (count.length < 6) {
         count = "0" + count;
     }
+
+	const counterCards = count.split('').map((digit) =>
+		<CounterCard2 counterDigit={digit} color={props.color} />
+	);
     
 	return (
 	<div className="container-fluid bg-black d-flex justify-content-center py-5">
 		<ClockCard color={props.color} />
-		<CounterCard2 counterDigit={count[0]} color={props.color} />
-		<CounterCard2 counterDigit={count[1]} color={props.color} />
-		<CounterCard2 counterDigit={count[2]} color={props.color} />
-		<CounterCard2 counterDigit={count[3]} color={props.color} />
-		<CounterCard2 counterDigit={count[4]} color={props.color} />
-		<CounterCard2 counterDigit={count[5]} color={props.color} />
+		{counterCards}
 	</div>)
 };
 
