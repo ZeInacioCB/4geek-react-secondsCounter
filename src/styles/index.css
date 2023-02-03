@@ -10,6 +10,17 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-h1 {
-    color: darkslategrey;
+
+.custom-container {
+    padding: 1px;
+}
+
+.custom-content {
+    color: white;
+    padding: 2rem;
+}
+
+.custom-title {
+    font-size: 6rem;
+    font-family: monospace;
 }

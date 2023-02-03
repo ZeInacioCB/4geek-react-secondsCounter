@@ -1,9 +1,9 @@
 import React from "react";
-import CounterCard from "./counterNumberCard.jsx";
+import CounterCard2 from "./counterCard2.jsx";
 import ClockCard from "./clockCard.jsx";
 
 //create your first component
-const Counter = (props) => {
+const Counter2 = (props) => {
 	let count = String(props.count);
 	let digit1, digit2, digit3, digit4, digit5, digit6;
 
@@ -61,13 +61,13 @@ const Counter = (props) => {
 	return (
 	<div className="container-fluid bg-black d-flex justify-content-center py-5">
 		<ClockCard color={props.color} />
-		<CounterCard counter={digit1} color={props.color} />
-		<CounterCard counter={digit2} color={props.color} />
-		<CounterCard counter={digit3} color={props.color} />
-		<CounterCard counter={digit4} color={props.color} />
-		<CounterCard counter={digit5} color={props.color} />
-		<CounterCard counter={digit6} color={props.color} />
+		<CounterCard2 counter={digit1} color={props.color} />
+		<CounterCard2 counter={digit2} color={props.color}  />
+		<CounterCard2 counter={digit3} color={props.color}  />
+		<CounterCard2 counter={digit4} color={props.color}  />
+		<CounterCard2 counter={digit5} color={props.color}  />
+		<CounterCard2 counter={digit6} color={props.color}  />
 	</div>)
 };
 
-export default Counter;
+export default Counter2;

@@ -1,21 +1,23 @@
 import React from "react";
 
-const cardStyle = {
-    container: {
-        padding: "1px"
-    },
-    content: {
-        color: "white",
-        background: "darkslategrey",
-        padding: "2rem"
-    },
-    title: {
-        fontSize: "6rem"
-    }
-}
-
 //create your first component
 const CounterCard = (props) => {
+    // defining counterCard styles
+    const cardStyle = {
+        container: {
+            padding: "1px"
+        },
+        content: {
+            color: "white",
+            background: `${props.color}`,
+            padding: "2rem"
+        },
+        title: {
+            fontSize: "6rem",
+            fontFamily: "monospace"
+        }
+    }
+
 	return (
 		<div className="card bg-black m-1" style={cardStyle.container}>
             <div className="card-body border rounded-3" style={cardStyle.content}>
