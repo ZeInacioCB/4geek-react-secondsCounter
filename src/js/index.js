@@ -30,4 +30,4 @@ function renderCounter2() {
     )
     counter2++;
 }
-setInterval(renderCounter2, 500);
+setInterval(renderCounter2, 1000);
