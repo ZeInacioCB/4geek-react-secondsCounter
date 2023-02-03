@@ -6,13 +6,13 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import Counter from "./component/counter.jsx";
 
 //render your react application
 let counter = 0;
 function renderCounter() {
     ReactDOM.render(
-        <Home count={counter} />, 
+        <Counter count={counter} />, 
         document.querySelector("#app")
     )
     counter++;

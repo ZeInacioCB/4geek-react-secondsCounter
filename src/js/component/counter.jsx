@@ -1,9 +1,9 @@
 import React from "react";
 import CounterCard from "./counterNumberCard.jsx";
-import ClockCard from "./clock.jsx";
+import ClockCard from "./clockCard.jsx";
 
 //create your first component
-const Home = (props) => {
+const Counter = (props) => {
 	let count = String(props.count);
 	let digit1, digit2, digit3, digit4, digit5, digit6;
 
@@ -70,4 +70,4 @@ const Home = (props) => {
 	</div>)
 };
 
-export default Home;
+export default Counter;
